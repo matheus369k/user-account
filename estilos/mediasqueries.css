@@ -1,5 +1,156 @@
 @charset "UTF-8";
 
-@media screen and (min-width:789px) and (max-width:903px){
+/*Versão para Tablet adiante*/
+
+@media screen and (min-width:770px) {
+    main{
+        background-image: linear-gradient(to bottom, rgb(110, 34, 180), blueviolet,  rgb(49, 249, 189),  rgb(57, 204, 160));
+    }
+
+}
+
+/* Versão para Tablet*/
+
+@media screen and (min-width:770px) and (max-width:1224px){
+
+    #login{
+        margin: 0px ;
+        padding: 3px;
+        width: 760px;
+        height: 355px;
+        border: 1px solid black;
+        
+    }
+
+    h1,
+    #newsenh
+    #entrada{
+        padding: 2px;
+        margin: 0px;
+    }
+
+    #entrada{
+        width: 445px;
+        height: 320px;
+        margin-left: 140px;
+        border-radius: 0px 25px 25px 0px;
+    }
+
+    input.dado{
+        height: 35px;
+        width: 395px;
+       
+    }
+
+    form > p{
+        width: 450px;
+        
+    }
+
+    #imagem{
+        width: 275px;
+        height: 355px;
+        border-radius: 25px 0px 0px 25px;
+    }
+
+    .entrar,
+    #newsenh{
+        height: 42px;
+        width: 450px;
+    }
+}
+
+/*Versão para desktop*/
+
+@media screen and (min-width:1225px) and (max-width:1624px) {
+    #login{
+        border: 3px solid black;
+        width: 992px;
+        height: 400px;
+    }
+
+    #entrada{
+        top: 20px;
+        left: 350px;
+        border-radius: 25px 0px 0px 25px;
+    }
+
+    #imagem{
+        border-radius: 0px 25px 25px 0px;
+        height: 400px;
+        margin-left: 635px;
+    }
+
+    #entrada{
+        top: 55px;
+        left: 320px
+    }
+
+    #newsenh,
+    .entrar,
+    p{
+        width: 590px;
+    }
+
+    input.dado{
+        height: 60px;
+        width: 530px;
+    }
+}
+
+/*Versã para Telas Grandes*/
+
+@media screen and (min-width:1625px) {
+    #login{
+        width: 1600px;
+        height: 800px;
+    }
+
+    #imagem{
+        width: 600px;
+        height: 800px;
+        margin-left: 1000px;
+        border-radius: 0px 25px 25px 0px;
+    }
+
+    #entrada{
+        top: 250px;
+        left: 500px;
+    }
+
+    h1{
+        font-size: 3em;
+    }
+
+    div > p{
+        margin: 20px;
+        font-size: 2.2em;
+    }
+
+    #newsenh,
+    .entrar,
+    p{
+        width: 800px;
+        font-size: 1.6em;
+        margin: 20px 0px;
+        height: 100px;
+    }
+
+    input.dado{
+        height: 88px;
+        width: 700px;
+        margin-left: 90px;
+    }
+
+
+    #iconperson{
+        background-image: url('../imagens/person-big.png');
+        border-radius: 25px;
+    }
+
+    #iconsenha{
+        background-image:url('../imagens/chave-big.png') ;
+        border-radius: 25px;
+    }
     
 }
