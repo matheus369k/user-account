@@ -83,7 +83,7 @@ div > p{
 
 
 input.dado{
-    background-color:white;
+    background-color:hsl(166, 100%, 87%);
     border: 6px solid rgb(92, 20, 92);
     border-radius: 15px;
     width:265px;

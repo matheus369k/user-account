@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Login</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/mediasqueries.css">
@@ -17,18 +18,35 @@
             <div id="entrada">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
-                <form action="login.php" method="post" autocomplete="on">
+                <form action="login.php" 
+                method="post" 
+                autocomplete="on">
                     <p id="iconperson">
                         <label for="iemail"></label>
-                        <input class="dado" type="email" name="email" id="iemail" required placeholder=" xxxxxxxxx@gmail.com" autocomplete="email" min="16" max="60">
+                        <input class="dado" 
+                        type="email" 
+                        name="email" 
+                        id="iemail" 
+                        required placeholder="Seu E-mail" autocomplete="email" 
+                        min="16" 
+                        max="60">
                     </p>
                     <p id="iconsenha">
                         <label  
                         for="isenh"></label>
-                        <input class="dado" type="password" name="senha" id="isenh" required min="8" max="16" placeholder=" xxxxxxxx" autocomplete="current-password">
+                        <input class="dado" 
+                        type="password" 
+                        name="senha" 
+                        id="isenh" 
+                        required 
+                        min="8" 
+                        max="16" 
+                        placeholder="Sua Senha">
                     </p>
                     <p>
-                        <input class="entrar" type="submit" value="Entrar">
+                        <input class="entrar" 
+                        type="submit" 
+                        value="Entrar">
                     </p>
                 </form>
                 <button id="newsenh">
