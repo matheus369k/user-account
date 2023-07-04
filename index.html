@@ -6,6 +6,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/mediasqueries.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <main>
@@ -19,19 +20,19 @@
                 <form action="login.php" method="post" autocomplete="on">
                     <p id="iconperson">
                         <label for="iemail"></label>
-                        <input class="dado" type="email" name="email" id="iemail">
+                        <input class="dado" type="email" name="email" id="iemail" required placeholder=" xxxxxxxxx@gmail.com" autocomplete="email" min="16" max="60">
                     </p>
                     <p id="iconsenha">
                         <label  
                         for="isenh"></label>
-                        <input class="dado" type="password" name="senha" id="isenh">
+                        <input class="dado" type="password" name="senha" id="isenh" required min="8" max="16" placeholder=" xxxxxxxx" autocomplete="current-password">
                     </p>
                     <p>
                         <input class="entrar" type="submit" value="Entrar">
                     </p>
                 </form>
                 <button id="newsenh">
-                    <span>Esqueceu a senha?</span>
+                    <a href="#">Esqueceu a senha?</a>
                 </button>
             </div>
         </section>

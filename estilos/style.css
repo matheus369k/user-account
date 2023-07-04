@@ -19,6 +19,10 @@ main{
     position: relative;
 }
 
+form{
+    padding-top: 5px;
+}
+
 #login{
     border: 1px solid;
     box-shadow: 5px 5px 3px 3px rgba(0, 0, 0, 0.315);
@@ -94,7 +98,7 @@ input.dado{
     font-family: 'Work Sans', sans-serif;
     text-transform: uppercase;
     color: rgb(255, 255, 255);
-    margin: 10px 0px;
+    margin: 8px 0px;
     width: 320px;
     height: 50px;
     border-radius: 7px;
@@ -115,5 +119,15 @@ input.dado{
     color: white;
     background-color:  rgb(58, 94, 82);
     cursor: pointer;
+    transition: .3s;
+}
+
+a{
+    color: rgb(9, 132, 68) ;
+    text-decoration:none ;
+}
+
+a:hover{
+    color: white;
 }
 

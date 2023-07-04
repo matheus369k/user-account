@@ -15,7 +15,7 @@
 
     #login{
         margin: 0px ;
-        padding: 3px;
+        padding: 0px;
         width: 760px;
         height: 355px;
         border: 1px solid black;
@@ -129,7 +129,8 @@
 
     #newsenh,
     .entrar,
-    p{
+    p,
+    a{
         width: 800px;
         font-size: 1.6em;
         margin: 20px 0px;
