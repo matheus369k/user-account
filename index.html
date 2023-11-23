@@ -23,6 +23,16 @@
 <body>
 
     <main class="Container_login">
+        <nav class="Container_login_socialMedia">
+            <ul>
+                <li><img src="./img/github.png" alt="github"></li>
+                <li><img src="./img/linkedin.png" alt="linkedin"></li>
+                <li><img src="./img/instagram.png" alt="instagram"></li>
+                <li><img src="./img/discordia.png" alt="discord"></li>
+                <li><img src="./img/twitter.png" alt="twitter or X"></li>
+                <li><img src="./img/facebook.png" alt="facebook"></li>
+            </ul>
+        </nav>
         <img class="Container_login_banner" src="./img/1120121.png" alt="banner">
 
         <h1 class="Container_login_title">Login</h1>
@@ -35,20 +45,22 @@
         <p class="Container_login_container_email">
             <label class="Container_login_container_email_label" for="email"><img src="./img/person.png" alt="icon persona">
             </label>
-            <input class="Container_login_container_email_input" type="email" id="email" required placeholder="Seu E-mail" autocomplete="email" min="16" max="60">
+            <input class="Container_login_container_email_input" type="email" id="email" required placeholder="Seu E-mail" autocomplete="email">
         </p>
 
         <p class="Container_login_container_senha">
             <label class="Container_login_container_senha_label" for="senha"><img src="./img/chave.png" alt="icon key">
             </label>
-            <input class="Container_login_container_senha_input" type="password" id="senha" required min="8" max="16" placeholder="Sua Senha">
+            <input class="Container_login_container_senha_input" type="password" id="senha" placeholder="Sua Senha">
         </p>
 
-        <input class="Container_login_confirm" type="submit" value="Entrar">
+        <input id="btn_confirm" class="Container_login_confirm" type="submit" value="Entrar">
 
         <a href="#"><button class="Container_login_btn">Esqueceu a senha?</button></a>
 
     </main>
+
+    <script src="./js/index.js"></script>
 
 </body>
 
