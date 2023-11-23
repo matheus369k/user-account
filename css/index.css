@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Lugrasimo", cursive;
 }
 
 html, body {
@@ -85,7 +86,7 @@ html .Container_login_title, body .Container_login_title {
   }
 }
 html .Container_login_text, body .Container_login_text {
-  font-size: 1.2em;
+  font-size: 1em;
   text-shadow: 1px 1px black;
   grid-column: 2;
   grid-row: 2;
