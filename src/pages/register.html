@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>User account</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <header class="container_header">
+      <div class="profiler_container">
+        <i id="profiler-icon" class="profiler__icon_container"
+          ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path
+              d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"
+            /></svg
+        ></i>
+        <div id="profiler-split-model" class="profiler__split_model">
+          <nav>
+            <ul id="profiler-split-model-list">
+              <li id="login" class="profiler__model__items">
+                <a href="./login.html">Entrar</a>
+              </li>
+              <li id="register" class="profiler__model__items active">
+                <a href="./register.html">Registra-se</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="container_main">
+      <form
+        autocomplete="off"
+        aria-autocomplete="none"
+        class="forms_container"
+        id="container-form-register"
+      >
+        <div class="form__header_container">
+          <h1>Criar conta</h1>
+          <p>
+            Seja bem-vindo(a). crie uma conta para poder fazer as configurações
+            no seu ambiente.
+          </p>
+        </div>
+        <div class="form__inputs_container">
+          <input
+            autofocus
+            type="text"
+            name="name"
+            placeholder="Digite seu nome..."
+          />
+          <input type="email" name="email" placeholder="Digite seu e-mail..." />
+          <input
+            type="password"
+            name="password"
+            placeholder="Digite sua senha..."
+          />
+        </div>
+        <div class="form__checked_options_container">
+          <div>
+            <input type="checkbox" name="auto_connection" />
+            <p>Manter-me conectado(a)</p>
+          </div>
+          <div>
+            <input type="checkbox" name="agree_term" />
+            <p>
+              Ao selecionar, você concorda com nossos
+              <a href="#">Termos de Serviço</a> e
+              <a href="#">Política de Privacidade</a>.
+            </p>
+          </div>
+        </div>
+        <button type="submit" class="form__btn">Registra-se</button>
+      </form>
+    </main>
+  </body>
+</html>

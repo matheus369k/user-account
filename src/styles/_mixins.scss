@@ -1,0 +1,75 @@
+@use 'variables' as theme;
+
+@mixin tablet() {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin mobile() {
+  @media (max-width: 668px) {
+    @content;
+  }
+}
+
+@mixin flex-xy-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin form-btn {
+  height: 40px;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgba($color: #000000, $alpha: 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  border: none;
+  color: theme.$zinc-300;
+  border: 1px solid theme.$zinc-300;
+  cursor: pointer;
+  transition: all 250ms;
+
+  &:hover {
+    border-color: theme.$zinc-100;
+    color: theme.$zinc-100;
+  }
+}
+
+@mixin input {
+  height: 40px;
+  width: 100%;
+  font-size: 0.875em;
+  padding-inline: 1rem;
+  border-radius: 8px;
+  border: 1px solid theme.$zinc-300;
+  background-color: rgba($color: #000000, $alpha: 0.2) !important;
+  backdrop-filter: blur(10px);
+  color: theme.$zinc-100;
+  font-size: 1em;
+
+  @include mobile();
+
+  &::placeholder {
+    color: theme.$zinc-300;
+  }
+
+  &:focus {
+    color: theme.$zinc-100;
+    border-color: theme.$zinc-100;
+  }
+
+  &:invalid,
+  &[data-invalid] {
+    border-color: theme.$red-400;
+  }
+}
+
+@mixin centralizar {
+  display: flex;
+  align-items: center;
+}

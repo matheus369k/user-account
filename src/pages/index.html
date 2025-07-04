@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>User account</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <header class="container_header">
+      <div class="profiler_container">
+        <i id="profiler-icon" class="profiler__icon_container"
+          ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path
+              d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"
+            /></svg
+        ></i>
+        <div id="profiler-split-model" class="profiler__split_model">
+          <nav>
+            <ul id="profiler-split-model-list">
+              <li id="login" class="profiler__model__items">
+                <a href="./login.html">Entrar</a>
+              </li>
+              <li id="register" class="profiler__model__items">
+                <a href="./register.html">Registra-se</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div id="profiler-user-name" class="profiler__user">
+          <!-- insert user info with js-->
+        </div>
+      </div>
+      <button
+        id="logout-icon-container"
+        aria-label="logout"
+        class="logout_icon_container"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path
+            d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"
+          />
+        </svg>
+      </button>
+    </header>
+    <main id="container-main" class="container_main">
+      <!-- insert message with js -->
+    </main>
+    <footer class="footer_container">
+      <span id="user-id" class="user_id">
+        <!-- insert uuid with js -->
+      </span>
+    </footer>
+  </body>
+</html>
